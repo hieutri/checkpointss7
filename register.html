@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./general.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="gradient-background">
+        <form class="form-container" id="register-form">
+            <h1 class="form-heading">Register</h1>
+            <div class="form-input-name-wrapper">
+                <div class="form-input-name-container">
+                    <p>Firstname:</p>
+                    <input type="text" name="firstName" required>
+                </div>
+                <div class="form-input-name-container">
+                    <p>Lastname:</p>
+                    <input type="text" name="lastName" required>
+                </div>
+            </div>
+            <div class="form-input-container">
+                <p>Email:</p>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-input-container">
+                <p>Password:</p>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-input-container">
+                <p> Confirm Password:</p>
+                <input type="password" name="confirmPassword" required>
+            </div>
+            <div class="form-action-container">
+                <button type="sumbit">Register</button>
+                <p>Already have an account? <a href="./login.html">Login now</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="./js/appp.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>
